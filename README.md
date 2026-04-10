@@ -5,6 +5,7 @@ Dhvani is a fully voice-controlled email assistant that lets you compose, edit, 
 
 <img width="497" height="170" alt="Screenshot 2026-04-08 at 5 50 06 PM" src="https://github.com/user-attachments/assets/fce15362-6dee-4301-8507-b561d5d8243d" />
 
+---
 
 
 <img width="497" height="566" alt="Screenshot 2026-04-08 at 5 49 03 PM" src="https://github.com/user-attachments/assets/2d0e640c-de32-4e9e-8c66-c73cc662b12a" />
