@@ -154,15 +154,15 @@ Python version note: LangChain / LangGraph currently ship Pydantic v1 shims that
 
 ---
 
-### Ollama (Local AI - Mistral)
+**Ollama (Local AI - Mistral)**
 
 Install and run:
 
-# macOS
+**macOS**
 
 brew install ollama
 
-# Linux
+**Linux**
 
 curl -fsSL https://ollama.com/install.sh | sh
 
