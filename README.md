@@ -75,11 +75,13 @@ Make sure Ollama is running (ollama serve) and your virtual environment is activ
 Speech-to-text/
 
 │
+
 ├── **agent_graph.py**      # LangGraph state machine — the brain of Dhvani
 
 ├── **main.py**             # Entry point; runs the graph in a loop until "stop"
 
 │
+
 ├── **email_tools.py**      # draft_email(), edit_email(), send_email() via Graph API
 
 ├── **people_search.py**    # search Outlook contacts 
@@ -87,6 +89,7 @@ Speech-to-text/
 ├── **ms_auth.py**          # MSAL device-flow auth; caches token in token_cache.bin
 
 │
+
 ├── **record.py**           # Records mic input → temp WAV file (sounddevice)
 
 ├── **transcribe.py**       # WAV → text (faster-whisper, lazy-loaded)
@@ -96,7 +99,9 @@ Speech-to-text/
 ├── **token_cache.bin**     # Auto-created after first login (gitignore this)
 
 ├── **.env**                # Secrets 
+
 │
+
 └── **requirements.txt**
 
 --- 
@@ -115,6 +120,55 @@ Dependency	Purpose
 Python version note: LangChain / LangGraph currently ship Pydantic v1 shims that are incompatible with Python 3.14. Use Python 3.10, 3.11, 3.12, or 3.13.
 
 --- 
+**Setup** 
+
+**Microsoft 365 (Outlook Integration)** 
+
+1. Go to https://portal.azure.com  
+
+2. Create a new app:  
+
+   - Azure Active Directory → App registrations → New registration  
+
+   - Choose **Personal Microsoft accounts** (or both for work accounts)
+
+3. Copy:
+
+   - `MS_CLIENT_ID` (Application ID)
+
+   - `MS_TENANT_ID` (`consumers` for personal accounts)
+
+4. Enable:
+
+   - Authentication → **Allow public client flows = Yes**
+
+5. Add API Permissions (Microsoft Graph → Delegated):
+
+   - `User.Read`
+
+   - `Contacts.Read`
+
+   - `Mail.Send`
+
+6. Grant admin consent (if required)
+
+---
+
+### Ollama (Local AI - Mistral)
+
+Install and run:
+
+# macOS
+
+brew install ollama
+
+# Linux
+
+curl -fsSL https://ollama.com/install.sh | sh
+
+ollama pull mistral
+
+ollama serve
 
 ### Voice command reference
 
