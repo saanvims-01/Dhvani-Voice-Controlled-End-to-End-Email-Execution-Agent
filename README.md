@@ -5,6 +5,7 @@ Dhvani is a fully voice-controlled email assistant that lets you compose, edit, 
 
 **Complete working DEMO of Dhvani:** https://drive.google.com/drive/folders/18pp01rziYekyIabpfDsnuT3YSdyPEIeo 
 
+
 <img width="497" height="170" alt="Screenshot 2026-04-08 at 5 50 06 PM" src="https://github.com/user-attachments/assets/fce15362-6dee-4301-8507-b561d5d8243d" />
 
 ---
@@ -69,36 +70,34 @@ Make sure Ollama is running (ollama serve) and your virtual environment is activ
 
 --- 
 
-**Project structure**
+### Project structure
 
 Speech-to-text/
 
 │
-├── agent_graph.py      # LangGraph state machine — the brain of Dhvani
+├── **agent_graph.py**      # LangGraph state machine — the brain of Dhvani
 
-├── main.py             # Entry point; runs the graph in a loop until "stop"
-
-│
-├── email_tools.py      # draft_email(), edit_email(), send_email() via Graph API
-
-├── people_search.py    # search Outlook contacts 
-
-├── ms_auth.py          # MSAL device-flow auth; caches token in token_cache.bin
+├── **main.py**             # Entry point; runs the graph in a loop until "stop"
 
 │
-├── record.py           # Records mic input → temp WAV file (sounddevice)
+├── **email_tools.py**      # draft_email(), edit_email(), send_email() via Graph API
 
-├── transcribe.py       # WAV → text (faster-whisper, lazy-loaded)
+├── **people_search.py**    # search Outlook contacts 
 
-├── speak_script.py     # Text → speech (pyttsx3)
+├── **ms_auth.py**          # MSAL device-flow auth; caches token in token_cache.bin
 
-├── token_cache.bin     # Auto-created after first login (gitignore this)
-
-├── .env                # Secrets 
 │
-└── requirements.txt
+├── **record.py**           # Records mic input → temp WAV file (sounddevice)
 
-<img width="468" height="273" alt="image" src="https://github.com/user-attachments/assets/776903be-d195-4759-9444-0495af63259f" />
+├── **transcribe.py**       # WAV → text (faster-whisper, lazy-loaded)
+
+├── **speak_script.py**     # Text → speech (pyttsx3)
+
+├── **token_cache.bin**     # Auto-created after first login (gitignore this)
+
+├── **.env**                # Secrets 
+│
+└── **requirements.txt**
 
 --- 
 
