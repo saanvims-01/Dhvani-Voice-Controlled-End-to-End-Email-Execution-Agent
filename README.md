@@ -17,59 +17,6 @@ It uses faster-whisper for speech-to-text, Ollama / Mistral for email drafting a
 
 --- 
 
-**Running the assistant**
-
-Make sure Ollama is running (ollama serve) and your virtual environment is active: 
-
-*Dhvani will greet you and start listening immediately. A typical session looks like this:*
-
-============================================================
-
-  Dhvani — Voice Email Assistant 
-  
-  Say 'stop' or 'exit' to quit
-  
-============================================================
-
-🔊 Dhvani says: Hey, I'm Dhvani! Whom do you want me to mail, and regarding what?
-
-🎙️ Listening for 8 seconds...
-
-✅ Recording complete
-
-📝 Transcribed: Send a mail to Nishanth telling let's meet on Monday at 10 AM.
-
-🔊 Dhvani says: Searching for Nishanth.
-
-🔊 Dhvani says: Found Nishanth Kumar.
-
-🔊 Dhvani says: Drafting your email to Nishanth Kumar. One moment.
-
-✍️ Drafting email with Mistral...
-
-🔊 Dhvani says: Done! Here's what I came up with.
-
-🔊 Dhvani says: I drafted an email to Nishanth Kumar.
-
-🔊 Dhvani says: The subject is: Meeting on Monday.
-
-🔊 Dhvani says: The body is. Hi Nishanth, I wanted to check if you're available
-                 for a meeting on Monday at 10 AM. Please let me know. Thanks.
-                 
-🔊 Dhvani says: Should I send it, edit it, or cancel?
-
-🎙️ Listening for 4 seconds...
-
-📝 Transcribed: Send it.
-
-📤 Sending email to Nishanth Kumar (nishanth@example.com)...
-
-✅ Email sent successfully!
-
-🔊 Dhvani says: Email sent successfully.
-
---- 
-
 ### Project structure
 
 Speech-to-text/
@@ -218,5 +165,59 @@ stop · exit · quit · bye · thank you · goodbye
 
 Or press Ctrl+C at any time.
 
+---
+
+**Running the assistant**
+
+Make sure Ollama is running (ollama serve) and your virtual environment is active: 
+
+*Dhvani will greet you and start listening immediately. A typical session looks like this:*
+
+============================================================
+
+  Dhvani — Voice Email Assistant 
+  
+  Say 'stop' or 'exit' to quit
+  
+============================================================
+
+🔊 Dhvani says: Hey, I'm Dhvani! Whom do you want me to mail, and regarding what?
+
+🎙️ Listening for 8 seconds...
+
+✅ Recording complete
+
+📝 Transcribed: Send a mail to Nishanth telling let's meet on Monday at 10 AM.
+
+🔊 Dhvani says: Searching for Nishanth.
+
+🔊 Dhvani says: Found Nishanth Kumar.
+
+🔊 Dhvani says: Drafting your email to Nishanth Kumar. One moment.
+
+✍️ Drafting email with Mistral...
+
+🔊 Dhvani says: Done! Here's what I came up with.
+
+🔊 Dhvani says: I drafted an email to Nishanth Kumar.
+
+🔊 Dhvani says: The subject is: Meeting on Monday.
+
+🔊 Dhvani says: The body is. Hi Nishanth, I wanted to check if you're available
+                 for a meeting on Monday at 10 AM. Please let me know. Thanks.
+                 
+🔊 Dhvani says: Should I send it, edit it, or cancel?
+
+🎙️ Listening for 4 seconds...
+
+📝 Transcribed: Send it.
+
+📤 Sending email to Nishanth Kumar (nishanth@example.com)...
+
+✅ Email sent successfully!
+
+🔊 Dhvani says: Email sent successfully.
+
+--- 
 
 
