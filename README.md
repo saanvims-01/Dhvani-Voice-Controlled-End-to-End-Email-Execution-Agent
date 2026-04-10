@@ -170,6 +170,8 @@ ollama pull mistral
 
 ollama serve
 
+---
+
 ### Voice command reference
 
 **Starting a request**
